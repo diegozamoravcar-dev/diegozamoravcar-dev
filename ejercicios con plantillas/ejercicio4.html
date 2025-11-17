@@ -1,227 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Pro Players Fortnite</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bugha - Pro Player Fortnite</title>
 <style>
-:root{
---bg: #0f1724;
---card: #0b1220;
---muted: #9aa6bf;
---accent: #6ee7b7;
---gap: 18px;
-font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+body {
+background: #0f172a;
+color: white;
+font-family: Arial, sans-serif;
+text-align: center;
+padding: 40px;
 }
 
-body{
-margin:0;
-background: linear-gradient(180deg, var(--bg), #071126 120%);
-color: #e6eef8;
-min-height:100vh;
-display:flex;
-align-items:flex-start;
-justify-content:center;
-padding:40px 18px;
-box-sizing:border-box;
+.card {
+max-width: 320px;
+margin: auto;
+background: #1e293b;
+padding: 20px;
+border-radius: 12px;
 }
 
-.container{
-width:100%;
-max-width:1100px;
+.card img {
+width: 100%;
+border-radius: 10px;
 }
 
-header{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:16px;
-margin-bottom:18px;
-}
-
-header h1{
-font-size:1.6rem;
-margin:0;
-letter-spacing:0.2px;
-}
-
-header p{
-margin:0;
-color:var(--muted);
-font-size:0.95rem;
-}
-
-.grid{
-display:grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-gap:var(--gap);
-}
-
-.card{
-background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.08));
-border: 1px solid rgba(255,255,255,0.04);
-border-radius:12px;
-overflow:hidden;
-box-shadow: 0 6px 20px rgba(2,6,23,0.6);
-transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.card:focus-within,
-.card:hover{
-transform: translateY(-6px);
-box-shadow: 0 14px 40px rgba(0,0,0,0.6);
-}
-
-figure{
-margin:0;
-display:flex;
-flex-direction:column;
-align-items:stretch;
-}
-
-.thumb{
-width:100%;
-aspect-ratio: 16/10;
-object-fit:cover;
-display:block;
-background:linear-gradient(90deg,#071022,#0b1a2b);
-}
-
-figcaption{
-padding:12px 14px;
-display:flex;
-flex-direction:column;
-gap:6px;
-}
-
-.name{
-font-weight:600;
-font-size:1rem;
-margin:0;
-color:#eaf6f0;
-}
-
-.meta{
-font-size:0.88rem;
-color:var(--muted);
-display:flex;
-gap:8px;
-align-items:center;
+.name {
+font-size: 1.4rem;
+margin-top: 15px;
+font-weight: bold;
 }
 
 .role {
-background: rgba(110,231,183,0.08);
-color: var(--accent);
-padding:4px 8px;
-border-radius:999px;
-font-size:0.78rem;
-font-weight:600;
-}
-
-/* simple responsive helper */
-@media (max-width:460px){
-header h1{ font-size:1.2rem; }
-.meta{ font-size:0.82rem; }
+color: #94a3b8;
+font-size: 1rem;
 }
 </style>
 </head>
 <body>
-<main class="container" role="main">
-<header>
-<div>
-<h1>Pro Players Fortnite</h1>
-<p>Galería — imagen del jugador y texto debajo (nombre y rol).</p>
-</div>
-<p style="color:var(--muted); font-size:0.9rem;">Edita las imágenes y textos en el HTML</p>
-</header>
 
-<section class="grid" aria-label="Galería de pro players">
-<!-- Card 1 -->
-<article class="card">
-<figure>
-<!-- Sustituye el src por tu imagen -->
-<img class="thumb" src="bugha.webp" alt="Mongraal, jugador profesional de Fortnite">
-<figcaption>
-<p class="name">Mongraal</p>
-<div class="meta">
-<span class="role">Pro Player</span>
-<span>Reino Unido</span>
-</div>
-</figcaption>
-</figure>
-</article>
+<div class="card">
+<!-- Cambia esta imagen si tienes una mejor -->
+<img src="bugha.webp?text=Bugha" alt="Bugha">
 
-<!-- Card 2 -->
-<article class="card">
-<figure>
-<img class="thumb" src="bugha.webp" alt="Bugha, jugador profesional de Fortnite">
-<figcaption>
 <p class="name">Bugha</p>
-<div class="meta">
-<span class="role">Campeón</span>
-<span>Estados Unidos</span>
+<p class="role">Campeón del Mundo - Pro Player de Fortnite</p>
 </div>
-</figcaption>
-</figure>
-</article>
 
-<!-- Card 3 -->
-<article class="card">
-<figure>
-<img class="thumb" src="bugha.webp" alt="Benjyfishy, jugador profesional de Fortnite">
-<figcaption>
-<p class="name">Benjyfishy</p>
-<div class="meta">
-<span class="role">Streamer / Pro</span>
-<span>Reino Unido</span>
-</div>
-</figcaption>
-</figure>
-</article>
-
-<!-- Card 4 -->
-<article class="card">
-<figure>
-<img class="thumb" src="bugha.webp" alt="Clix, jugador profesional de Fortnite">
-<figcaption>
-<p class="name">Clix</p>
-<div class="meta">
-<span class="role">Pro Player</span>
-<span>Estados Unidos</span>
-</div>
-</figcaption>
-</figure>
-</article>
-
-<!-- Card 5 -->
-<article class="card">
-<figure>
-<img class="thumb" src="bugha.webp" alt="Tfue, jugador profesional de Fortnite">
-<figcaption>
-<p class="name">Tfue</p>
-<div class="meta">
-<span class="role">Streamer</span>
-<span>Estados Unidos</span>
-</div>
-</figcaption>
-</figure>
-</article>
-
-<!-- Card 6 -->
-<article class="card">
-<figure>
-<img class="thumb" src="https://via.placeholder.com/800x500.png?text=Nickmercs" alt="Nickmercs, jugador profesional de Fortnite">
-<figcaption>
-<p class="name">Nickmercs</p>
-<div class="meta">
-<span class="role">Creator</span>
-<span>Estados Unidos</span>
-</div>
-</figcaption>
-</figure>
-</article>
-
-</section>
-</main>
 </body>
 </html>
